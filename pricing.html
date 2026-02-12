@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compara precios y configuraciones de los coches eléctricos Voltaic Cars. Mark 1 desde 42.990€, Mark 2 desde 52.490€, Mark 3 desde 68.990€. Financiación disponible.">
+  <meta name="keywords" content="precios coches eléctricos, Voltaic Cars precios, financiación coche eléctrico, comprar coche eléctrico">
+  <title>Precios | Voltaic Cars</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo_pres.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="index.html" class="header__logo" aria-label="Voltaic Cars - Inicio">
+        <img src="logo_pres.png" alt="Voltaic Cars logo" width="40" height="40">
+        <span>Voltaic Cars</span>
+      </a>
+      <nav role="navigation" aria-label="Navegación principal">
+        <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navList">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__list" id="navList">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="products.html" class="nav__link">Modelos</a></li>
+          <li><a href="pricing.html" class="nav__link nav__link--active">Precios</a></li>
+          <li><a href="gallery.html" class="nav__link">Galería</a></li>
+          <li><a href="contact.html" class="nav__link">Contacto</a></li>
+          <li><a href="contact.html" class="btn btn--primary nav__cta">Reservar Test Drive</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Page Header -->
+    <section class="page-header" aria-labelledby="pageTitle">
+      <div class="page-header__glow"></div>
+      <div class="container">
+        <h1 id="pageTitle" class="page-header__title">Precios y Configuraciones</h1>
+        <p class="page-header__desc">Elige tu modelo, personalízalo y comienza a conducir el futuro. Financiación flexible disponible.</p>
+      </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="pricing" aria-labelledby="pricingTitle">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Transparencia total</span>
+          <h2 id="pricingTitle" class="section-title">Encuentra tu Voltaic ideal</h2>
+          <p class="section-subtitle mx-auto">Todos los precios incluyen IVA, entrega a domicilio y primer año de seguro a todo riesgo.</p>
+        </div>
+
+        <div class="pricing__grid">
+
+          <!-- Mark 1 -->
+          <div class="pricing-card reveal">
+            <div class="pricing-card__image">
+              <img src="mark1_min.png" alt="Voltaic Mark 1" width="320" height="180" loading="lazy">
+            </div>
+            <h3 class="pricing-card__name">Voltaic Mark 1</h3>
+            <p class="pricing-card__type">Sedán Deportivo</p>
+            <p class="pricing-card__price">42.990€ <small>IVA incluido</small></p>
+            <p class="pricing-card__finance">Desde 399€/mes con financiación a 84 meses</p>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">Autonomía 520 km (WLTP)</li>
+              <li class="pricing-card__feature">Motor dual 480 CV</li>
+              <li class="pricing-card__feature">0-100 km/h en 3.8s</li>
+              <li class="pricing-card__feature">Pantalla OLED 17"</li>
+              <li class="pricing-card__feature">Conducción autónoma nivel 3</li>
+              <li class="pricing-card__feature">Audio premium 16 altavoces</li>
+              <li class="pricing-card__feature">Carga rápida 150kW</li>
+              <li class="pricing-card__feature">Garantía 8 años batería</li>
+            </ul>
+            <a href="contact.html" class="btn btn--outline-dark pricing-card__btn">Configurar y Reservar</a>
+          </div>
+
+          <!-- Mark 2 Featured -->
+          <div class="pricing-card pricing-card--featured reveal">
+            <div class="pricing-card__badge">Más vendido</div>
+            <div class="pricing-card__image">
+              <img src="mark2_min.png" alt="Voltaic Mark 2" width="320" height="180" loading="lazy">
+            </div>
+            <h3 class="pricing-card__name">Voltaic Mark 2</h3>
+            <p class="pricing-card__type">SUV Familiar</p>
+            <p class="pricing-card__price">52.490€ <small>IVA incluido</small></p>
+            <p class="pricing-card__finance">Desde 489€/mes con financiación a 84 meses</p>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">Autonomía 580 km (WLTP)</li>
+              <li class="pricing-card__feature">Motor dual 550 CV</li>
+              <li class="pricing-card__feature">0-100 km/h en 4.2s</li>
+              <li class="pricing-card__feature">Configuración 5 o 7 plazas</li>
+              <li class="pricing-card__feature">Maletero 680L / 1.950L</li>
+              <li class="pricing-card__feature">Conducción autónoma nivel 3</li>
+              <li class="pricing-card__feature">Carga rápida 250kW</li>
+              <li class="pricing-card__feature">Capacidad remolque 2.500 kg</li>
+              <li class="pricing-card__feature">Garantía 8 años batería</li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary pricing-card__btn">Configurar y Reservar</a>
+          </div>
+
+          <!-- Mark 3 -->
+          <div class="pricing-card reveal">
+            <div class="pricing-card__image">
+              <img src="mark3_min.png" alt="Voltaic Mark 3" width="320" height="180" loading="lazy">
+            </div>
+            <h3 class="pricing-card__name">Voltaic Mark 3</h3>
+            <p class="pricing-card__type">Gran Turismo</p>
+            <p class="pricing-card__price">68.990€ <small>IVA incluido</small></p>
+            <p class="pricing-card__finance">Desde 649€/mes con financiación a 84 meses</p>
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature">Autonomía 650 km (WLTP)</li>
+              <li class="pricing-card__feature">Motor tri-axial 650 CV</li>
+              <li class="pricing-card__feature">0-100 km/h en 3.2s</li>
+              <li class="pricing-card__feature">Interior Alcántara premium</li>
+              <li class="pricing-card__feature">Techo panorámico electrocrómico</li>
+              <li class="pricing-card__feature">Conducción autónoma nivel 3+</li>
+              <li class="pricing-card__feature">Carga ultra-rápida 350kW</li>
+              <li class="pricing-card__feature">Audio Dolby Atmos 22 altavoces</li>
+              <li class="pricing-card__feature">Suspensión neumática adaptativa</li>
+              <li class="pricing-card__feature">Garantía 8 años batería</li>
+            </ul>
+            <a href="contact.html" class="btn btn--outline-dark pricing-card__btn">Configurar y Reservar</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section style="padding: var(--section-pad) 0;" aria-labelledby="compareTitle">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Comparativa</span>
+          <h2 id="compareTitle" class="section-title">Compara los tres modelos</h2>
+        </div>
+        <div style="overflow-x: auto; margin-top: 2.5rem;" class="reveal">
+          <table style="width: 100%; border-collapse: collapse; min-width: 700px;" role="table" aria-label="Tabla comparativa de modelos Voltaic">
+            <thead>
+              <tr style="border-bottom: 2px solid var(--gray-100);">
+                <th style="text-align: left; padding: 1rem; font-family: var(--font-heading); font-weight: 700; color: var(--gray-400); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em;">Característica</th>
+                <th style="text-align: center; padding: 1rem; font-family: var(--font-heading); font-weight: 800; color: var(--dark); font-size: 1.1rem;">Mark 1</th>
+                <th style="text-align: center; padding: 1rem; font-family: var(--font-heading); font-weight: 800; color: var(--primary); font-size: 1.1rem;">Mark 2</th>
+                <th style="text-align: center; padding: 1rem; font-family: var(--font-heading); font-weight: 800; color: var(--dark); font-size: 1.1rem;">Mark 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--gray-100);">
+                <td style="padding: 1rem; font-weight: 600; color: var(--gray-800);">Precio base</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">42.990€</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600); background: rgba(0,87,255,0.03);">52.490€</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">68.990€</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--gray-100);">
+                <td style="padding: 1rem; font-weight: 600; color: var(--gray-800);">Autonomía (WLTP)</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">520 km</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600); background: rgba(0,87,255,0.03);">580 km</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">650 km</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--gray-100);">
+                <td style="padding: 1rem; font-weight: 600; color: var(--gray-800);">Potencia</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">480 CV</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600); background: rgba(0,87,255,0.03);">550 CV</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">650 CV</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--gray-100);">
+                <td style="padding: 1rem; font-weight: 600; color: var(--gray-800);">0-100 km/h</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">3.8s</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600); background: rgba(0,87,255,0.03);">4.2s</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">3.2s</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--gray-100);">
+                <td style="padding: 1rem; font-weight: 600; color: var(--gray-800);">Carga rápida</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">150 kW</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600); background: rgba(0,87,255,0.03);">250 kW</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">350 kW</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--gray-100);">
+                <td style="padding: 1rem; font-weight: 600; color: var(--gray-800);">Plazas</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">5</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600); background: rgba(0,87,255,0.03);">5 / 7</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">4</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--gray-100);">
+                <td style="padding: 1rem; font-weight: 600; color: var(--gray-800);">Maletero</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">520L</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600); background: rgba(0,87,255,0.03);">680L</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">450L</td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem; font-weight: 600; color: var(--gray-800);">Techo panorámico</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">Opcional</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600); background: rgba(0,87,255,0.03);">Opcional</td>
+                <td style="padding: 1rem; text-align: center; color: var(--gray-600);">De serie</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Finance Info -->
+    <section class="features" aria-labelledby="financeTitle">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Financiación</span>
+          <h2 id="financeTitle" class="section-title">Opciones de pago flexibles</h2>
+          <p class="section-subtitle mx-auto">Hacer realidad tu Voltaic es más fácil de lo que piensas.</p>
+        </div>
+        <div class="features__grid">
+          <div class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">💳</div>
+            <h3 class="feature-card__title">Financiación desde 399€/mes</h3>
+            <p class="feature-card__text">Hasta 84 meses de financiación con un TAE desde el 4.9%. Sin comisión de apertura, sin letra pequeña.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🔄</div>
+            <h3 class="feature-card__title">Leasing y Renting</h3>
+            <p class="feature-card__text">Opciones de leasing operativo y renting con mantenimiento incluido. Ideal para profesionales y empresas.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🎁</div>
+            <h3 class="feature-card__title">Plan MOVES III</h3>
+            <p class="feature-card__text">Aprovecha las ayudas gubernamentales de hasta 7.000€ para la compra de vehículos eléctricos. Te gestionamos todo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner" aria-labelledby="ctaPricing">
+      <div class="container">
+        <h2 id="ctaPricing" class="cta-banner__title">Tu Voltaic te espera</h2>
+        <p class="cta-banner__text">Configura tu modelo, elige tu financiación y reserva con solo 500€ reembolsables.</p>
+        <a href="contact.html" class="btn btn--dark">Contactar con un Asesor</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" aria-label="Voltaic Cars">
+            <img src="logo_pres.png" alt="Voltaic Cars logo" width="40" height="40">
+            <span>Voltaic Cars</span>
+          </a>
+          <p>Fabricante de vehículos eléctricos de alto rendimiento. Diseñados en Europa, impulsados por el futuro.</p>
+        </div>
+        <div>
+          <h3 class="footer__title">Modelos</h3>
+          <ul class="footer__links">
+            <li><a href="products.html">Mark 1 - Sedán</a></li>
+            <li><a href="products.html">Mark 2 - SUV</a></li>
+            <li><a href="products.html">Mark 3 - GT</a></li>
+            <li><a href="pricing.html">Comparar Precios</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Empresa</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">Sobre Nosotros</a></li>
+            <li><a href="gallery.html">Galería</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Soporte</h3>
+          <ul class="footer__links">
+            <li><a href="contact.html">Centro de Ayuda</a></li>
+            <li><a href="#">Financiación</a></li>
+            <li><a href="#">Mantenimiento</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Voltaic Cars. Todos los derechos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

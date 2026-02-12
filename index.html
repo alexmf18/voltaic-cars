@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Voltaic Cars - Fabricante de coches eléctricos de alto rendimiento. Descubre el futuro de la movilidad sostenible con diseño futurista y tecnología de vanguardia.">
+  <meta name="keywords" content="coches eléctricos, vehículos eléctricos, EV, movilidad sostenible, Voltaic Cars, coches futuristas">
+  <meta name="author" content="Voltaic Cars">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Voltaic Cars - El Futuro de la Movilidad Eléctrica">
+  <meta property="og:description" content="Fabricante de coches eléctricos de alto rendimiento. Diseño futurista, tecnología de vanguardia.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="logo.png">
+
+  <title>Voltaic Cars - El Futuro de la Movilidad Eléctrica</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="logo_pres.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Skip to content (Accessibility) -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="index.html" class="header__logo" aria-label="Voltaic Cars - Inicio">
+        <img src="logo_pres.png" alt="Voltaic Cars logo" width="40" height="40">
+        <span>Voltaic Cars</span>
+      </a>
+
+      <nav role="navigation" aria-label="Navegación principal">
+        <button class="nav__toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navList">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__list" id="navList">
+          <li><a href="index.html" class="nav__link nav__link--active">Inicio</a></li>
+          <li><a href="products.html" class="nav__link">Modelos</a></li>
+          <li><a href="pricing.html" class="nav__link">Precios</a></li>
+          <li><a href="gallery.html" class="nav__link">Galería</a></li>
+          <li><a href="contact.html" class="nav__link">Contacto</a></li>
+          <li><a href="contact.html" class="btn btn--primary nav__cta">Reservar Test Drive</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN ==================== -->
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero__bg-glow hero__bg-glow--1"></div>
+      <div class="hero__bg-glow hero__bg-glow--2"></div>
+
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge">Nuevo Lanzamiento 2026</div>
+          <h1 id="heroTitle" class="hero__title">
+            Conduce el <span>futuro</span> hoy.
+          </h1>
+          <p class="hero__desc">
+            Voltaic Cars redefine la movilidad eléctrica con vehículos de alto rendimiento,
+            diseño vanguardista y cero emisiones. Tecnología que te impulsa hacia adelante.
+          </p>
+          <div class="hero__actions">
+            <a href="products.html" class="btn btn--primary">
+              Explorar Modelos
+              <svg viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+            </a>
+            <a href="gallery.html" class="btn btn--outline">Ver Galería</a>
+          </div>
+
+          <div class="hero__stats">
+            <div>
+              <div class="hero__stat-value" data-count="650" data-suffix=" km">0 km</div>
+              <div class="hero__stat-label">Autonomía máxima</div>
+            </div>
+            <div>
+              <div class="hero__stat-value" data-count="3" data-suffix=".2s">0s</div>
+              <div class="hero__stat-label">0-100 km/h</div>
+            </div>
+            <div>
+              <div class="hero__stat-value" data-count="0" data-suffix="">0</div>
+              <div class="hero__stat-label">Emisiones CO₂</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <img src="presentacion.png" alt="Voltaic Mark 1 - Coche eléctrico de diseño futurista en color azul" width="700" height="450" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" aria-labelledby="featuresTitle">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Innovación sin límites</span>
+          <h2 id="featuresTitle" class="section-title">¿Por qué elegir Voltaic?</h2>
+          <p class="section-subtitle mx-auto">Cada detalle está diseñado para ofrecerte la mejor experiencia de conducción eléctrica.</p>
+        </div>
+
+        <div class="features__grid">
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">⚡</div>
+            <h3 class="feature-card__title">Carga Ultra-Rápida</h3>
+            <p class="feature-card__text">De 10% a 80% en solo 18 minutos con nuestra tecnología de carga de 350kW. Pasa menos tiempo cargando y más conduciendo.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🛡️</div>
+            <h3 class="feature-card__title">Seguridad Integral</h3>
+            <p class="feature-card__text">Sistema de conducción autónoma nivel 3, frenado de emergencia y 12 airbags. Puntuación máxima en todas las pruebas Euro NCAP.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🌱</div>
+            <h3 class="feature-card__title">100% Sostenible</h3>
+            <p class="feature-card__text">Fabricados con materiales reciclados y energía renovable. Cero emisiones en todo el ciclo de vida del vehículo.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">📱</div>
+            <h3 class="feature-card__title">Conectividad Total</h3>
+            <p class="feature-card__text">Pantalla táctil de 17", integración con tu smartphone, actualizaciones OTA y asistente de voz inteligente integrado.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🏎️</div>
+            <h3 class="feature-card__title">Rendimiento Extremo</h3>
+            <p class="feature-card__text">Motores de doble eje con hasta 650 CV. Aceleración que te pega al asiento, con control total en cada curva.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🔧</div>
+            <h3 class="feature-card__title">Mantenimiento Mínimo</h3>
+            <p class="feature-card__text">Sin motor de combustión, sin aceite, sin filtros. Reduce tus costes de mantenimiento hasta un 60% respecto a un coche tradicional.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Models Preview -->
+    <section class="models" aria-labelledby="modelsTitle">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Nuestros modelos</span>
+          <h2 id="modelsTitle" class="section-title section-title--light">Diseñados para impresionar</h2>
+          <p class="section-subtitle section-subtitle--light mx-auto">Tres modelos únicos para diferentes estilos de vida. Encuentra el tuyo.</p>
+        </div>
+
+        <div class="models__grid">
+          <!-- Mark 1 -->
+          <article class="model-card reveal">
+            <div class="model-card__image">
+              <span class="model-card__tag">Nuevo</span>
+              <img src="mark1.png" alt="Voltaic Mark 1 - Sedán eléctrico deportivo" width="500" height="312" loading="lazy">
+            </div>
+            <div class="model-card__body">
+              <h3 class="model-card__name">Voltaic Mark 1</h3>
+              <p class="model-card__type">Sedán Deportivo</p>
+              <div class="model-card__specs">
+                <div>
+                  <div class="model-card__spec-value">520 km</div>
+                  <div class="model-card__spec-label">Autonomía</div>
+                </div>
+                <div>
+                  <div class="model-card__spec-value">3.8s</div>
+                  <div class="model-card__spec-label">0-100 km/h</div>
+                </div>
+                <div>
+                  <div class="model-card__spec-value">480 CV</div>
+                  <div class="model-card__spec-label">Potencia</div>
+                </div>
+              </div>
+              <p class="model-card__price">Desde 42.990€ <small>IVA incluido</small></p>
+              <a href="products.html" class="btn btn--primary">Descubrir más</a>
+            </div>
+          </article>
+
+          <!-- Mark 2 -->
+          <article class="model-card reveal">
+            <div class="model-card__image">
+              <span class="model-card__tag">Popular</span>
+              <img src="mark2.png" alt="Voltaic Mark 2 - SUV eléctrico familiar" width="500" height="312" loading="lazy">
+            </div>
+            <div class="model-card__body">
+              <h3 class="model-card__name">Voltaic Mark 2</h3>
+              <p class="model-card__type">SUV Familiar</p>
+              <div class="model-card__specs">
+                <div>
+                  <div class="model-card__spec-value">580 km</div>
+                  <div class="model-card__spec-label">Autonomía</div>
+                </div>
+                <div>
+                  <div class="model-card__spec-value">4.2s</div>
+                  <div class="model-card__spec-label">0-100 km/h</div>
+                </div>
+                <div>
+                  <div class="model-card__spec-value">550 CV</div>
+                  <div class="model-card__spec-label">Potencia</div>
+                </div>
+              </div>
+              <p class="model-card__price">Desde 52.490€ <small>IVA incluido</small></p>
+              <a href="products.html" class="btn btn--primary">Descubrir más</a>
+            </div>
+          </article>
+
+          <!-- Mark 3 -->
+          <article class="model-card reveal">
+            <div class="model-card__image">
+              <span class="model-card__tag">Flagship</span>
+              <img src="mark3.png" alt="Voltaic Mark 3 - Gran Turismo eléctrico de lujo" width="500" height="312" loading="lazy">
+            </div>
+            <div class="model-card__body">
+              <h3 class="model-card__name">Voltaic Mark 3</h3>
+              <p class="model-card__type">Gran Turismo</p>
+              <div class="model-card__specs">
+                <div>
+                  <div class="model-card__spec-value">650 km</div>
+                  <div class="model-card__spec-label">Autonomía</div>
+                </div>
+                <div>
+                  <div class="model-card__spec-value">3.2s</div>
+                  <div class="model-card__spec-label">0-100 km/h</div>
+                </div>
+                <div>
+                  <div class="model-card__spec-value">650 CV</div>
+                  <div class="model-card__spec-label">Potencia</div>
+                </div>
+              </div>
+              <p class="model-card__price">Desde 68.990€ <small>IVA incluido</small></p>
+              <a href="products.html" class="btn btn--primary">Descubrir más</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Presentation / About -->
+    <section class="presentation reveal" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="presentation__wrapper">
+          <div class="presentation__image">
+            <img src="presentacion2.png" alt="Interior futurista de un Voltaic Car con pantalla panorámica" width="640" height="420" loading="lazy">
+          </div>
+          <div class="presentation__content">
+            <span class="section-label">Sobre Voltaic</span>
+            <h2 id="aboutTitle" class="section-title">Nacimos para revolucionar la carretera</h2>
+            <p class="section-subtitle">Voltaic Cars nació con una misión clara: crear vehículos eléctricos que no solo sean sostenibles, sino irresistibles. Combinamos ingeniería de precisión con diseño futurista para una nueva generación de conductores.</p>
+            <ul class="presentation__list">
+              <li class="presentation__list-item">Ingeniería europea con fabricación responsable</li>
+              <li class="presentation__list-item">Baterías de estado sólido de última generación</li>
+              <li class="presentation__list-item">Red de carga propia con más de 2.000 puntos en Europa</li>
+              <li class="presentation__list-item">Garantía de 8 años en batería y tren motriz</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner" aria-labelledby="ctaTitle">
+      <div class="container">
+        <h2 id="ctaTitle" class="cta-banner__title">¿Listo para sentir la electricidad?</h2>
+        <p class="cta-banner__text">Reserva tu test drive gratuito y experimenta la conducción del futuro sin compromiso.</p>
+        <a href="contact.html" class="btn btn--dark">Reservar Test Drive</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" aria-label="Voltaic Cars">
+            <img src="logo_pres.png" alt="Voltaic Cars logo" width="40" height="40">
+            <span>Voltaic Cars</span>
+          </a>
+          <p>Fabricante de vehículos eléctricos de alto rendimiento. Diseñados en Europa, impulsados por el futuro.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Modelos</h3>
+          <ul class="footer__links">
+            <li><a href="products.html">Mark 1 - Sedán</a></li>
+            <li><a href="products.html">Mark 2 - SUV</a></li>
+            <li><a href="products.html">Mark 3 - GT</a></li>
+            <li><a href="pricing.html">Comparar Precios</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Empresa</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">Sobre Nosotros</a></li>
+            <li><a href="gallery.html">Galería</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="#">Trabaja con Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Soporte</h3>
+          <ul class="footer__links">
+            <li><a href="contact.html">Centro de Ayuda</a></li>
+            <li><a href="#">Financiación</a></li>
+            <li><a href="#">Mantenimiento</a></li>
+            <li><a href="#">Red de Carga</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Voltaic Cars. Todos los derechos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

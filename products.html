@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre los modelos de coches eléctricos Voltaic Cars: Mark 1 Sedán, Mark 2 SUV y Mark 3 Gran Turismo. Rendimiento, autonomía y diseño futurista.">
+  <meta name="keywords" content="modelos eléctricos, Voltaic Mark 1, Voltaic Mark 2, Voltaic Mark 3, coches eléctricos, sedán eléctrico, SUV eléctrico">
+  <title>Modelos | Voltaic Cars</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo_pres.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container">
+      <a href="index.html" class="header__logo" aria-label="Voltaic Cars - Inicio">
+        <img src="logo_pres.png" alt="Voltaic Cars logo" width="40" height="40">
+        <span>Voltaic Cars</span>
+      </a>
+      <nav role="navigation" aria-label="Navegación principal">
+        <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navList">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__list" id="navList">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="products.html" class="nav__link nav__link--active">Modelos</a></li>
+          <li><a href="pricing.html" class="nav__link">Precios</a></li>
+          <li><a href="gallery.html" class="nav__link">Galería</a></li>
+          <li><a href="contact.html" class="nav__link">Contacto</a></li>
+          <li><a href="contact.html" class="btn btn--primary nav__cta">Reservar Test Drive</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Page Header -->
+    <section class="page-header" aria-labelledby="pageTitle">
+      <div class="page-header__glow"></div>
+      <div class="container">
+        <h1 id="pageTitle" class="page-header__title">Nuestros Modelos</h1>
+        <p class="page-header__desc">Tres vehículos eléctricos diseñados para diferentes estilos de vida. Rendimiento excepcional, cero emisiones.</p>
+      </div>
+    </section>
+
+    <!-- Mark 1 -->
+    <section class="product-detail" aria-labelledby="mark1Title" style="padding: var(--section-pad) 0;">
+      <div class="container">
+        <div class="presentation__wrapper reveal">
+          <div class="presentation__image" style="background: linear-gradient(135deg, #0a0f1e, #111d3a); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; padding: 2rem;">
+            <img src="mark1.png" alt="Voltaic Mark 1 - Vista lateral del sedán deportivo eléctrico" width="600" height="375" loading="lazy">
+          </div>
+          <div class="presentation__content">
+            <span class="section-label">Sedán Deportivo</span>
+            <h2 id="mark1Title" class="section-title">Voltaic Mark 1</h2>
+            <p class="section-subtitle">El sedán que redefine la elegancia eléctrica. Líneas afiladas, interior premium y una aceleración que te dejará sin palabras. Perfecto para quienes buscan estilo y rendimiento en su día a día.</p>
+            <ul class="presentation__list">
+              <li class="presentation__list-item">Autonomía de 520 km (WLTP)</li>
+              <li class="presentation__list-item">Motor dual de 480 CV con tracción integral</li>
+              <li class="presentation__list-item">0 a 100 km/h en 3.8 segundos</li>
+              <li class="presentation__list-item">Pantalla OLED de 17" con sistema Voltaic OS</li>
+              <li class="presentation__list-item">Carga rápida: 10% a 80% en 22 minutos</li>
+              <li class="presentation__list-item">Conducción autónoma nivel 3</li>
+            </ul>
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+              <span style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 900; color: var(--dark);">Desde 42.990€</span>
+              <a href="contact.html" class="btn btn--primary">Reservar Ahora</a>
+              <a href="pricing.html" class="btn btn--outline-dark">Ver Precios</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs Grid Mark 1 -->
+    <section class="features" aria-label="Especificaciones del Mark 1">
+      <div class="container">
+        <div class="features__grid">
+          <div class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🔋</div>
+            <h3 class="feature-card__title">Batería 82 kWh</h3>
+            <p class="feature-card__text">Batería de estado sólido de alta densidad energética con gestión térmica inteligente para un rendimiento óptimo en cualquier clima.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🎵</div>
+            <h3 class="feature-card__title">Audio Premium</h3>
+            <p class="feature-card__text">Sistema de sonido envolvente con 16 altavoces y cancelación activa de ruido para una experiencia acústica inmersiva.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">🌡️</div>
+            <h3 class="feature-card__title">Climatización Inteligente</h3>
+            <p class="feature-card__text">Sistema de climatización con bomba de calor que precalienta o enfría el habitáculo de forma remota desde la app.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mark 2 -->
+    <section class="product-detail" aria-labelledby="mark2Title" style="padding: var(--section-pad) 0;">
+      <div class="container">
+        <div class="presentation__wrapper reveal" style="direction: rtl;">
+          <div style="direction: ltr;">
+            <span class="section-label">SUV Familiar</span>
+            <h2 id="mark2Title" class="section-title">Voltaic Mark 2</h2>
+            <p class="section-subtitle">El SUV que combina espacio, potencia y versatilidad. Diseñado para familias que no quieren renunciar a nada. 7 plazas opcionales y un maletero de 680 litros para todas tus aventuras.</p>
+            <ul class="presentation__list">
+              <li class="presentation__list-item">Autonomía de 580 km (WLTP)</li>
+              <li class="presentation__list-item">Motor dual de 550 CV con tracción integral inteligente</li>
+              <li class="presentation__list-item">0 a 100 km/h en 4.2 segundos</li>
+              <li class="presentation__list-item">Configuración de 5 o 7 plazas</li>
+              <li class="presentation__list-item">Maletero de 680L expandible a 1.950L</li>
+              <li class="presentation__list-item">Capacidad de remolque de 2.500 kg</li>
+            </ul>
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+              <span style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 900; color: var(--dark);">Desde 52.490€</span>
+              <a href="contact.html" class="btn btn--primary">Reservar Ahora</a>
+              <a href="pricing.html" class="btn btn--outline-dark">Ver Precios</a>
+            </div>
+          </div>
+          <div class="presentation__image" style="direction: ltr; background: linear-gradient(135deg, #0a0f1e, #111d3a); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; padding: 2rem;">
+            <img src="mark2.png" alt="Voltaic Mark 2 - Vista lateral del SUV eléctrico familiar" width="600" height="375" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mark 3 -->
+    <section class="product-detail" aria-labelledby="mark3Title" style="padding: var(--section-pad) 0; background: var(--off-white);">
+      <div class="container">
+        <div class="presentation__wrapper reveal">
+          <div class="presentation__image" style="background: linear-gradient(135deg, #0a0f1e, #111d3a); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; padding: 2rem;">
+            <img src="mark3.png" alt="Voltaic Mark 3 - Vista lateral del Gran Turismo eléctrico de lujo" width="600" height="375" loading="lazy">
+          </div>
+          <div class="presentation__content">
+            <span class="section-label">Gran Turismo</span>
+            <h2 id="mark3Title" class="section-title">Voltaic Mark 3</h2>
+            <p class="section-subtitle">Nuestro buque insignia. El Mark 3 es la expresión máxima de rendimiento y lujo eléctrico. Diseñado para quienes exigen lo mejor, sin compromisos. Un Gran Turismo para la era eléctrica.</p>
+            <ul class="presentation__list">
+              <li class="presentation__list-item">Autonomía de 650 km (WLTP)</li>
+              <li class="presentation__list-item">Motor tri-axial de 650 CV</li>
+              <li class="presentation__list-item">0 a 100 km/h en 3.2 segundos</li>
+              <li class="presentation__list-item">Interior en cuero vegano Alcántara con asientos ventilados</li>
+              <li class="presentation__list-item">Techo panorámico electrocrómico</li>
+              <li class="presentation__list-item">Carga rápida: 10% a 80% en 18 minutos (350kW)</li>
+            </ul>
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+              <span style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 900; color: var(--dark);">Desde 68.990€</span>
+              <a href="contact.html" class="btn btn--primary">Reservar Ahora</a>
+              <a href="pricing.html" class="btn btn--outline-dark">Ver Precios</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner" aria-labelledby="ctaProducts">
+      <div class="container">
+        <h2 id="ctaProducts" class="cta-banner__title">¿No puedes decidirte?</h2>
+        <p class="cta-banner__text">Visita uno de nuestros concesionarios y prueba los tres modelos. Te ayudaremos a encontrar el Voltaic perfecto para ti.</p>
+        <a href="contact.html" class="btn btn--dark">Reservar Test Drive</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="header__logo" aria-label="Voltaic Cars">
+            <img src="logo_pres.png" alt="Voltaic Cars logo" width="40" height="40">
+            <span>Voltaic Cars</span>
+          </a>
+          <p>Fabricante de vehículos eléctricos de alto rendimiento. Diseñados en Europa, impulsados por el futuro.</p>
+        </div>
+        <div>
+          <h3 class="footer__title">Modelos</h3>
+          <ul class="footer__links">
+            <li><a href="products.html">Mark 1 - Sedán</a></li>
+            <li><a href="products.html">Mark 2 - SUV</a></li>
+            <li><a href="products.html">Mark 3 - GT</a></li>
+            <li><a href="pricing.html">Comparar Precios</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Empresa</h3>
+          <ul class="footer__links">
+            <li><a href="index.html">Sobre Nosotros</a></li>
+            <li><a href="gallery.html">Galería</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Soporte</h3>
+          <ul class="footer__links">
+            <li><a href="contact.html">Centro de Ayuda</a></li>
+            <li><a href="#">Financiación</a></li>
+            <li><a href="#">Mantenimiento</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Voltaic Cars. Todos los derechos reservados.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
