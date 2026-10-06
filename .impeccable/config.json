@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-06T15:18:23.095Z",
+        "reason": "finish reviewer: text flush against 1px hairline rules is the deliberate spec-sheet grammar of the wind-tunnel direction; no flush text visible in captures"
+      }
+    ]
+  }
+}

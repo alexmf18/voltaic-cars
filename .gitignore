@@ -1,0 +1,4 @@
+# Impeccable: review screenshots and local hook cache are working artifacts
+.impeccable/review/
+.impeccable/hook.cache.json
+.impeccable/config.local.json

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T00:00:00Z",
+  "title": "Design System: Voltaic Cars",
+  "extensions": {
+    "colorMeta": {
+      "test-lamp-amber": { "role": "primary", "displayName": "Test-Lamp Amber", "canonical": "#ff8a1f", "tonalRamp": ["#3a1c00", "#5e2f00", "#8a4600", "#b85d00", "#e57500", "#ff8a1f", "#ffb36e", "#ffe0c2"] },
+      "test-lamp-amber-hi": { "role": "primary", "displayName": "Lamp Hot", "canonical": "#ffa64f", "tonalRamp": ["#3d2000", "#633600", "#8f4f00", "#bd6a0c", "#e88a2c", "#ffa64f", "#ffc68f", "#ffe8d1"] },
+      "amber-ink": { "role": "primary", "displayName": "Amber Ink", "canonical": "#1a0d00", "tonalRamp": ["#1a0d00", "#331a00", "#4d2800", "#663600", "#804400", "#995300", "#b36200", "#cc7200"] },
+      "tunnel-ink": { "role": "neutral", "displayName": "Tunnel Ink", "canonical": "#0c0d0f", "tonalRamp": ["#0c0d0f", "#16181b", "#1f2226", "#2e3236", "#4a4e53", "#6b6f74", "#9a9da1", "#d4d6d8"] },
+      "graphite": { "role": "neutral", "displayName": "Graphite", "canonical": "#16181b", "tonalRamp": ["#0c0d0f", "#16181b", "#1f2226", "#2b2e33", "#41454b", "#5f636a", "#8e9298", "#c9cbce"] },
+      "graphite-2": { "role": "neutral", "displayName": "Graphite Deep", "canonical": "#1f2226", "tonalRamp": ["#101215", "#1f2226", "#2a2e33", "#383c42", "#4f545b", "#6d727a", "#9a9ea5", "#d0d2d5"] },
+      "smoke": { "role": "neutral", "displayName": "Smoke", "canonical": "#e9e6df", "tonalRamp": ["#26241f", "#43403a", "#625e57", "#8f8b83", "#b9b5ac", "#d3d0c8", "#e9e6df", "#f7f6f2"] },
+      "smoke-2": { "role": "neutral", "displayName": "Smoke Mid", "canonical": "#b9b5ac", "tonalRamp": ["#26241f", "#43403a", "#625e57", "#8f8b83", "#b9b5ac", "#d3d0c8", "#e9e6df", "#f7f6f2"] },
+      "smoke-3": { "role": "neutral", "displayName": "Smoke Low", "canonical": "#8f8b83", "tonalRamp": ["#26241f", "#43403a", "#625e57", "#8f8b83", "#b9b5ac", "#d3d0c8", "#e9e6df", "#f7f6f2"] },
+      "rule": { "role": "neutral", "displayName": "Rule", "canonical": "rgba(233, 230, 223, 0.14)", "tonalRamp": ["rgba(233,230,223,0.06)", "rgba(233,230,223,0.10)", "rgba(233,230,223,0.14)", "rgba(233,230,223,0.20)", "rgba(233,230,223,0.26)", "rgba(233,230,223,0.34)", "rgba(233,230,223,0.50)", "rgba(233,230,223,0.75)"] },
+      "rule-strong": { "role": "neutral", "displayName": "Rule Strong", "canonical": "rgba(233, 230, 223, 0.34)", "tonalRamp": ["rgba(233,230,223,0.06)", "rgba(233,230,223,0.10)", "rgba(233,230,223,0.14)", "rgba(233,230,223,0.20)", "rgba(233,230,223,0.26)", "rgba(233,230,223,0.34)", "rgba(233,230,223,0.50)", "rgba(233,230,223,0.75)"] },
+      "danger": { "role": "semantic", "displayName": "Signal Red", "canonical": "#ff7a66", "tonalRamp": ["#3d0e06", "#661a0e", "#991f0f", "#cc3b26", "#f25a44", "#ff7a66", "#ffaa9c", "#ffdcd6"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Page h1s and the closing own-run line; Archivo 800 at width 125%, full measure, balanced." },
+      "headline": { "displayName": "Headline", "purpose": "Section h2s beside a right-aligned lede; Archivo 760 at width 118%." },
+      "title": { "displayName": "Title", "purpose": "h3s, price column names, fact terms; Archivo 700 at width 112%." },
+      "body": { "displayName": "Body", "purpose": "Geist reading voice; prose to 62ch, ledes to 46ch in smoke-2." },
+      "tag": { "displayName": "Tag", "purpose": "Plain-language categories and notes in Geist 500, sentence case, never mono." },
+      "data": { "displayName": "Data", "purpose": "Martian Mono for what an instrument prints: units, run IDs, figure numbers, spec labels, log conditions." }
+    },
+    "shadows": [],
+    "masks": [
+      { "name": "photo-fade-hero", "value": "linear-gradient(to bottom, #000 0%, #000 72%, transparent 100%)", "purpose": "Fades the hero photograph into the ink ground so copy overlaps it. The only permitted gradient." },
+      { "name": "photo-fade-run", "value": "linear-gradient(to bottom, #000 0%, #000 78%, transparent 100%)", "purpose": "Fades product run stages so the run body can overlap." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Default easing for draw-ins, underlines, reveals and image scale." },
+      { "name": "state-change", "value": "0.2s ease", "purpose": "Colour and border changes on buttons, links, inputs, icon buttons." },
+      { "name": "nav-underline", "value": "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Amber 1px underline drawing in from the left on nav hover and active." },
+      { "name": "pin-draw", "value": "0.9s cubic-bezier(0.16, 1, 0.3, 1), labels 0.7s, stagger 0.18s", "purpose": "Leader lines draw in once on placement; labels rise 6px." },
+      { "name": "smoke-streamlines", "value": "canvas, 1px smoke lines at 0.06 to 0.42 alpha, dashes flowing left to right, 1.8s initial reveal", "purpose": "Signature air: hero deflects around the car obstacle and the cursor (110px gaussian, 46px push); quiet variant at half strength behind page heads and the closer." },
+      { "name": "smoke-scroll-line", "value": "fixed 12px SVG line, 1px smoke at 0.75 over a rule track", "purpose": "Scroll progress down the left edge." },
+      { "name": "gallery-hover", "value": "scale(1.035) over 0.9s", "purpose": "Photograph leans in on hover or focus." },
+      { "name": "reduced-motion", "value": "prefers-reduced-motion: reduce", "purpose": "Smoke renders one static frame, counters and pins show at rest, transitions collapse to 0.01ms." }
+    ],
+    "breakpoints": [
+      { "name": "lg", "value": "1080px" },
+      { "name": "md", "value": "860px" },
+      { "name": "sm", "value": "600px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single action: amber, square, optional trailing arrow that slides on hover.",
+      "html": "<a href=\"#\" class=\"ds-btn ds-btn-primary\">Reservar test drive <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.95rem 1.35rem; font-family: var(--font-body, 'Geist', system-ui, sans-serif); font-weight: 600; font-size: 0.95rem; line-height: 1.2; border: 1px solid transparent; border-radius: 0; text-decoration: none; white-space: nowrap; transition: background-color 0.2s ease, border-color 0.2s ease; } .ds-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.75; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn:hover svg { transform: translateX(4px); } .ds-btn-primary { background: #ff8a1f; color: #1a0d00; } .ds-btn-primary:hover { background: #ffa64f; } .ds-btn:focus-visible { outline: 2px solid #ff8a1f; outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on a model: hairline border that turns full smoke on hover.",
+      "html": "<a href=\"#\" class=\"ds-btn-ghost\">Ver el Mark 1 <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.95rem 1.35rem; font-family: 'Geist', system-ui, sans-serif; font-weight: 600; font-size: 0.95rem; color: #e9e6df; background: transparent; border: 1px solid rgba(233,230,223,0.34); border-radius: 0; text-decoration: none; transition: border-color 0.2s ease; } .ds-btn-ghost svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.75; } .ds-btn-ghost:hover { border-color: #e9e6df; } .ds-btn-ghost:focus-visible { outline: 2px solid #ff8a1f; outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "description": "Secondary action beside a primary button: hairline underline that turns amber on hover.",
+      "html": "<a href=\"#\" class=\"ds-link\">Ver los tres modelos</a>",
+      "css": ".ds-link { font-family: 'Geist', system-ui, sans-serif; font-weight: 500; color: #e9e6df; text-decoration: underline; text-decoration-color: rgba(233,230,223,0.34); text-decoration-thickness: 1px; text-underline-offset: 0.35em; transition: text-decoration-color 0.2s ease; } .ds-link:hover { text-decoration-color: #ff8a1f; } .ds-link:focus-visible { outline: 2px solid #ff8a1f; outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Square ink field with hairline border; amber border on focus, red on error.",
+      "html": "<label class=\"ds-label\" for=\"ds-name\">Nombre</label><input id=\"ds-name\" class=\"ds-input\" placeholder=\"Tu nombre\">",
+      "css": ".ds-label { display: block; font-family: 'Geist', system-ui, sans-serif; font-size: 0.9rem; font-weight: 500; color: #e9e6df; margin-bottom: 0.5rem; } .ds-input { width: 100%; padding: 0.85rem 0.95rem; background: #0c0d0f; border: 1px solid rgba(233,230,223,0.34); border-radius: 0; font: 1rem 'Geist', system-ui, sans-serif; color: #e9e6df; caret-color: #ff8a1f; outline: none; transition: border-color 0.2s ease; } .ds-input::placeholder { color: #8f8b83; } .ds-input:hover { border-color: #8f8b83; } .ds-input:focus { border-color: #ff8a1f; } .ds-input.is-invalid { border-color: #ff7a66; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Fixed ink header: amber bolt brand, Geist links with an amber underline drawn from the left, compact primary button.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-brand\" href=\"#\"><svg viewBox=\"0 0 32 32\" aria-hidden=\"true\"><path d=\"M18.2 3 7.5 18.2h7.2L12.6 29 24.5 12.6h-7.6L18.2 3z\"/></svg><span class=\"ds-brand-name\">VOLTAIC</span><span class=\"ds-brand-sub\">CARS</span></a><nav><a class=\"ds-nav-link is-active\" href=\"#\">Inicio</a><a class=\"ds-nav-link\" href=\"#\">Modelos</a><a class=\"ds-nav-link\" href=\"#\">Precios</a><a class=\"ds-nav-cta\" href=\"#\">Reservar test drive</a></nav></header>",
+      "css": ".ds-header { height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 0 1.5rem; background: #0c0d0f; border-bottom: 1px solid rgba(233,230,223,0.14); } .ds-header nav { display: flex; align-items: center; gap: 2rem; } .ds-brand { display: inline-flex; align-items: center; gap: 0.6rem; color: #e9e6df; text-decoration: none; } .ds-brand svg { width: 22px; height: 22px; fill: #ff8a1f; } .ds-brand-name { font-family: 'Archivo', sans-serif; font-stretch: 125%; font-weight: 800; font-size: 1.05rem; letter-spacing: 0.04em; line-height: 1; } .ds-brand-sub { font-family: 'Martian Mono', monospace; font-size: 0.72rem; letter-spacing: 0.22em; color: #8f8b83; line-height: 1; } .ds-nav-link { position: relative; font-family: 'Geist', system-ui, sans-serif; font-size: 0.9rem; font-weight: 500; color: #b9b5ac; padding-block: 0.4rem; text-decoration: none; } .ds-nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: #ff8a1f; transform: scaleX(0); transform-origin: left; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1); } .ds-nav-link:hover, .ds-nav-link.is-active { color: #e9e6df; } .ds-nav-link:hover::after, .ds-nav-link.is-active::after { transform: scaleX(1); } .ds-nav-link:focus-visible, .ds-nav-cta:focus-visible { outline: 2px solid #ff8a1f; outline-offset: 3px; } .ds-nav-cta { padding: 0.7rem 1.1rem; font-family: 'Geist', system-ui, sans-serif; font-weight: 600; font-size: 0.88rem; background: #ff8a1f; color: #1a0d00; text-decoration: none; } .ds-nav-cta:hover { background: #ffa64f; }"
+    },
+    {
+      "name": "Tag",
+      "kind": "chip",
+      "description": "Plain-language category or note: Geist, sentence case, no box.",
+      "html": "<p class=\"ds-tag\">Sedán deportivo</p>",
+      "css": ".ds-tag { font-family: 'Geist', system-ui, sans-serif; font-size: 0.92rem; font-weight: 500; color: #b9b5ac; letter-spacing: 0; text-transform: none; margin: 0; }"
+    },
+    {
+      "name": "Pin",
+      "kind": "custom",
+      "description": "Leader-line annotation on a photograph: square dot, 1px leader, Archivo value over a mono name; draws in once.",
+      "html": "<div class=\"ds-pin-stage\"><div class=\"ds-pin\" style=\"left:30%;top:80%\"><span class=\"ds-pin-line\"></span><span class=\"ds-pin-dot\"></span><span class=\"ds-pin-label\"><span class=\"ds-pin-value\">650 km</span><span class=\"ds-pin-name\">Autonomía WLTP</span></span></div></div>",
+      "css": ".ds-pin-stage { position: relative; height: 220px; background: #16181b; } .ds-pin { position: absolute; --len: 96px; } .ds-pin-dot { position: absolute; left: -4px; top: -4px; width: 8px; height: 8px; border: 1px solid #e9e6df; background: #0c0d0f; } .ds-pin-line { position: absolute; left: 0; bottom: 4px; width: 1px; height: var(--len); background: #e9e6df; opacity: 0.7; transform-origin: bottom; animation: ds-pin-draw 0.9s cubic-bezier(0.16, 1, 0.3, 1) both; } .ds-pin-label { position: absolute; left: 0; bottom: calc(var(--len) + 10px); display: grid; gap: 0.15rem; white-space: nowrap; padding-left: 0.6rem; border-left: 1px solid rgba(233,230,223,0.34); animation: ds-pin-label 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both; } .ds-pin-value { font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 700; font-size: 1.6rem; line-height: 1; color: #e9e6df; font-variant-numeric: tabular-nums; } .ds-pin-name { font-family: 'Martian Mono', monospace; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: #b9b5ac; } @keyframes ds-pin-draw { from { transform: scaleY(0); } to { transform: scaleY(1); } } @keyframes ds-pin-label { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } } @media (prefers-reduced-motion: reduce) { .ds-pin-line, .ds-pin-label { animation: none; } }"
+    },
+    {
+      "name": "Spec Sheet",
+      "kind": "card",
+      "description": "Three-column ruled definition sheet: mono labels, Archivo values, vertical hairlines.",
+      "html": "<dl class=\"ds-specs\"><div><dt>Autonomía</dt><dd>520 km</dd></div><div><dt>0–100 km/h</dt><dd>3,8 s</dd></div><div><dt>Potencia</dt><dd>480 CV</dd></div></dl>",
+      "css": ".ds-specs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; border-top: 1px solid rgba(233,230,223,0.14); border-bottom: 1px solid rgba(233,230,223,0.14); } .ds-specs > div { padding: 1rem 1rem 1rem 0; } .ds-specs > div + div { padding-left: 1rem; border-left: 1px solid rgba(233,230,223,0.14); } .ds-specs dt { font-family: 'Martian Mono', monospace; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: #8f8b83; } .ds-specs dd { margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 700; font-size: 1.6rem; line-height: 1.15; color: #e9e6df; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Run Log Row",
+      "kind": "custom",
+      "description": "One measurement per ruled row: mono run ID, big Archivo value, mono condition, Geist note.",
+      "html": "<div class=\"ds-log\"><article class=\"ds-log-row\"><span class=\"ds-log-id\">V-01</span><p class=\"ds-log-value\">18 min</p><span class=\"ds-log-cond\">10 → 80 % a 350 kW</span><div><h3 class=\"ds-log-title\">Carga ultrarrápida</h3><p class=\"ds-log-text\">Menos tiempo enchufado, más kilómetros.</p></div></article></div>",
+      "css": ".ds-log { border-top: 1px solid rgba(233,230,223,0.34); } .ds-log-row { display: grid; grid-template-columns: 5.5rem minmax(7rem, 1.1fr) minmax(7rem, 1fr) minmax(0, 2.4fr); gap: 1.5rem; align-items: baseline; padding: 1.5rem 0; border-bottom: 1px solid rgba(233,230,223,0.14); } .ds-log-id, .ds-log-cond { font-family: 'Martian Mono', monospace; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: #8f8b83; font-variant-numeric: tabular-nums; } .ds-log-cond { color: #b9b5ac; } .ds-log-value { margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 118%; font-weight: 800; font-size: 2rem; line-height: 1; letter-spacing: -0.02em; color: #e9e6df; } .ds-log-title { margin: 0; font-family: 'Geist', system-ui, sans-serif; font-weight: 600; font-size: 1.02rem; color: #e9e6df; } .ds-log-text { margin: 0.3rem 0 0; font-family: 'Geist', system-ui, sans-serif; font-size: 0.98rem; color: #b9b5ac; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Wind Tunnel Test Record",
+    "overview": "Every Voltaic is shown as a run in the tunnel. The ground is matte tunnel black; air is drawn as thin smoke streamlines that flow left to right and bend around the car and the cursor; measurements are pinned to points on the photograph with leader lines and logged in ruled test sheets. The visitor reads the cars the way an engineer reads a run: photograph, three pinned numbers, the log, the comparison, then their own run (the test drive).\n\nThe world is dark, flat and ruled. Everything is drawn with 1px smoke hairlines on square corners; there are no shadows, glows or decorative gradients, and depth comes only from flat layers overlapping (photograph, smoke canvas, type). One warm colour exists, test-lamp amber, and it means \"act here\". The car's blue lives only inside the photographs. Headlines are expanded heavy Archivo set to full measure; numbers are set big in Archivo too, while their units, run IDs and conditions are whispered in Martian Mono.",
+    "keyCharacteristics": [
+      "Matte black ground with graphite bands; smoke-white type in three steps.",
+      "Amber is the single action colour: buttons, focus, caret, selection, hover underline, brand mark.",
+      "Square corners and 1px hairline rules everywhere; tables, specs, logs and price columns are ruled, not boxed.",
+      "Leader-line pins annotate photographs at real points on the car.",
+      "Motion is air: smoke streamlines, pins drawing in once, one smoke line tracking scroll."
+    ],
+    "rules": [
+      { "name": "The One Lamp Rule", "body": "Amber marks action and focus and nothing else. No amber headings, no amber data, no amber decoration; if it is amber, it can be pressed, typed into, or is the brand bolt.", "section": "colors" },
+      { "name": "The Blue Stays In The Photo Rule", "body": "The cars' blue is never sampled into the UI. Colour beyond black, smoke and amber comes only from photography.", "section": "colors" },
+      { "name": "The Instrument Rule", "body": "Martian Mono is for what an instrument would print: values' labels, units, run IDs, figure numbers, conditions. Categories, notes and anything a person would say are Geist tags, never mono.", "section": "typography" },
+      { "name": "The Big Number Rule", "body": "Measured values are set in Archivo with tabular figures; the mono label sits beside or below them small.", "section": "typography" },
+      { "name": "The Overlap Rule", "body": "To bring something forward, overlap it on a flat layer (run body pulled up over the stage by up to 4rem, copy over the masked photo); never shadow it.", "section": "elevation" },
+      { "name": "The Mask-Only Gradient Rule", "body": "Gradients exist only as image masks fading photographs into the ground. Never as fills, glows or text effects.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep amber for action and focus only: primary buttons, focus outline, caret, selection, hover underline, the brand bolt.",
+      "Do rule structures with 1px hairlines (rule for rows and columns, rule-strong for edges that take input or open a sheet).",
+      "Do set every measured value in expanded Archivo with tabular figures and put its unit or label in Martian Mono.",
+      "Do annotate photographs with leader-line pins placed on real points of the car, and give narrow screens a ruled readout instead.",
+      "Do bring layers forward by overlapping flat planes over masked photographs.",
+      "Do render the smoke as a single static frame under prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't round corners; every surface, control and dot is square.",
+      "Don't use box-shadows, glows, or gradient fills; the only gradient is the photograph fade mask.",
+      "Don't use amber for headings, data, decoration or category labels.",
+      "Don't set categories, notes or plain-language labels in Martian Mono; those are Geist tags.",
+      "Don't sample the cars' blue into the interface.",
+      "Don't box content in bordered cards; divide it with rules."
+    ]
+  }
+}
